@@ -1,0 +1,197 @@
+{block content}
+	<section class="o-robotovi" data-name="o-robotovi">
+        <div class="grid-container">
+            <div class="grid-x large-up-2 align-middle">
+                <div class="cell"><img src="{$basePath}{$images->get(4)->srcObrazku}" alt="roboter"></div>
+                <div class="cell">
+                    <div class="heading-text heading-text--side">
+                        <h2>{$robotInfo->get(1)->text}</h2><strong>{$robotInfo->get(2)->text}</strong>
+                        <p>{$robotInfo->get(3)->text}</p>
+                        <div class="bonusy">
+                            <div class="bonus"><img src="{$basePath}{$images->get(5)->srcObrazku}" alt="hodiny"><span>{$robotInfo->get(4)->text}</span></div>
+                            <div class="bonus"><img src="{$basePath}{$images->get(6)->srcObrazku}" alt="hodiny"><span>{$robotInfo->get(5)->text}</span></div>
+                            <div class="bonus"><img src="{$basePath}{$images->get(7)->srcObrazku}" alt="hodiny"><span>{$robotInfo->get(6)->text}</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-x large-up-2 align-middle">
+                <div class="cell">
+                    <div class="heading-text heading-text--side heading-text--side--left">
+                        <h2>{$robotInfo->get(7)->text}</h2>
+                        <p>{$robotInfo->get(8)->text}</p>
+                        <p>{$robotInfo->get(9)->text}</p>
+                        <p>{$robotInfo->get(10)->text}</p><a class="button" href="#" data-destination="kontakt">{$robotInfo->get(11)->text}</a>
+                    </div>
+                </div>
+                <div class="cell"><img src="{$basePath}{$images->get(8)->srcObrazku}" alt="Poznej operatora"></div>
+            </div>
+        </div>
+    </section>
+	<section class="vlastnosti" data-name="vlastnosti">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell">
+                    <div class="heading-text heading-text--center">
+                        <h2>{$vlastnosti->get(1)->text}</h2>
+                        <p>{$vlastnosti->get(2)->text}</p><a class="button" n:href="Obecna:obecna">{$vlastnosti->get(3)->text}</a>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="vlastnosti__table">
+                        <ul class="menu vertical">
+                            <li><img src="{$basePath}{$images->get(9)->srcObrazku}" alt="Poznej operatora">
+                                <p>{$vlastnosti->get(4)->text}</p>
+                            </li>
+                            <li><img src="{$basePath}{$images->get(9)->srcObrazku}" alt="Poznej operatora">
+                                <p>{$vlastnosti->get(5)->text}</p>
+                            </li>
+                            <li><img src="{$basePath}{$images->get(9)->srcObrazku}" alt="Poznej operatora">
+                                <p>{$vlastnosti->get(6)->text}</p>
+                            </li>
+                            <li><img src="{$basePath}{$images->get(9)->srcObrazku}" alt="Poznej operatora">
+                                <p>{$vlastnosti->get(7)->text}</p>
+                            </li>
+                            <li><img src="{$basePath}{$images->get(9)->srcObrazku}" alt="Poznej operatora">
+                                <p>{$vlastnosti->get(8)->text}</p>
+                            </li>
+                        </ul>
+                        <ul class="menu vertical">
+                            <li><img src="{$basePath}{$images->get(9)->srcObrazku}" alt="Poznej operatora">
+                                <p>{$vlastnosti->get(9)->text}</p>
+                            </li>
+                            <li><img src="{$basePath}{$images->get(9)->srcObrazku}" alt="Poznej operatora">
+                                <p>{$vlastnosti->get(10)->text}</p>
+                            </li>
+                            <li><img src="{$basePath}{$images->get(9)->srcObrazku}" alt="Poznej operatora">
+                                <p>{$vlastnosti->get(11)->text}</p>
+                            </li>
+                            <li><img src="{$basePath}{$images->get(9)->srcObrazku}" alt="Poznej operatora">
+                                <p>{$vlastnosti->get(12)->text}</p>
+                            </li>
+                            <li><img src="{$basePath}{$images->get(9)->srcObrazku}" alt="Poznej operatora">
+                                <p>{$vlastnosti->get(13)->text}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="ocekavani" data-name="ocekavani">
+        <div class="grid-container">
+            <div class="grid-x large-up-2 align-middle">
+                <div class="cell"><img src="{$basePath}{$images->get(10)->srcObrazku}" alt="mt3works logo"></div>
+                <div class="cell">
+                    <div class="heading-text heading-text--side">
+                        <h2 class="white">{$ocekavani->get(1)->text}</h2>
+                        <div class="ocekavani__table">
+                            <ul class="menu verical">
+                                <li><img src="{$basePath}{$images->get(11)->srcObrazku}" alt="Check green">
+                                    <p>{$ocekavani->get(2)->text}</p>
+                                </li>
+                                <li><img src="{$basePath}{$images->get(11)->srcObrazku}" alt="Check green">
+                                    <p>{$ocekavani->get(3)->text}</p>
+                                </li>
+                                <li><img src="{$basePath}{$images->get(11)->srcObrazku}" alt="Check green">
+                                    <p>{$ocekavani->get(4)->text}</p>
+                                </li>
+                                <li><img src="{$basePath}{$images->get(11)->srcObrazku}" alt="Check green">
+                                    <p>{$ocekavani->get(5)->text}</p>
+                                </li>
+                                <li><img src="{$basePath}{$images->get(11)->srcObrazku}" alt="Check green">
+                                    <p>{$ocekavani->get(6)->text}</p>
+                                </li>
+                            </ul>
+                        </div><a class="button" href="#" data-destination="kontakt">{$ocekavani->get(7)->text}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="predstaveni" data-name="akce">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell">
+                    <div class="heading-text heading-text--center">
+                        <h2>{$predstaveni->get(1)->text}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="predstaveni__gallery text-center grid-x grid-margin-x grid-padding-y large-up-4 medium-up-3 small-up-2">
+                <div class="cell"><a class="item" href="{$basePath}{$images->get(17)->srcObrazku}" data-mediabox="galerie"><img src="{$basePath}{$images->get(13)->srcObrazku}" alt="roboter zero v akci">
+                        <div class="item__hover"><img src="./assets/icons/zoom.svg" alt="zoom"></div>
+                    </a></div>
+                <div class="cell"><a class="item" href="{$basePath}{$images->get(18)->srcObrazku}" data-mediabox="galerie"><img src="{$basePath}{$images->get(14)->srcObrazku}" alt="roboter zero v akci">
+                        <div class="item__hover"><img src="./assets/icons/zoom.svg" alt="zoom"></div>
+                    </a></div>
+                <div class="cell"><a class="item" href="{$basePath}{$images->get(19)->srcObrazku}" data-mediabox="galerie"><img src="{$basePath}{$images->get(15)->srcObrazku}" alt="roboter zero v akci">
+                        <div class="item__hover"><img src="./assets/icons/zoom.svg" alt="zoom"></div>
+                    </a></div>
+                <div class="cell"><a class="item" href="{$basePath}{$images->get(20)->srcObrazku}" data-mediabox="galerie"><img src="{$basePath}{$images->get(16)->srcObrazku}" alt="roboter zero v akci">
+                        <div class="item__hover"><img src="./assets/icons/zoom.svg" alt="zoom"></div>
+                    </a></div>
+            </div>
+            <div class="grid-x" data-name="video">
+                <div class="cell">
+                    <iframe width="100%" height="731px" src="https://www.youtube.com/embed/Uaiwews9F6A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="predstaveni__banner grid-x align-middle text-center">
+                <div class="cell">
+                    <div class="banner__content">
+                        <H2>{$predstaveni->get(2)->text}</H2><span>Cena od: <br> <strong>{$predstaveni->get(3)->text}</strong></span><a class="button fat" href="#">{$predstaveni->get(4)->text}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="kontakt" data-name="kontakt">
+        <div class="grid-container">
+            <div class="grid-x align-middle">
+                <div class="cell large-6">
+                    <div class="heading-text heading-text--side heading-text--side--left">
+                        <h2>{$kontakt->get(1)->text}</h2>
+                        <p>{$kontakt->get(2)->text}</p>
+                        <div class="buttons"><a class="button email" href="mailto:info.works@mt3.cz"><img src="{$basePath}{$images->get(21)->srcObrazku}" alt="obalka"><span> {$kontakt->get(3)->text}</span></a><a class="button phone" href="tel:+420604264517"><img src="{$basePath}{$images->get(22)->srcObrazku}" alt="obalka"><span> {$kontakt->get(4)->text}</span></a></div>
+                    </div>
+                </div>
+                <div class="cell large-6">
+                    <div class="kontakt__form">
+                        <H2 class="white">{$kontakt->get(5)->text}</H2>
+                        {control contactForm}
+                        <p class="white">
+                            {$kontakt->get(11)->text}<a n:href="Obecna:obecna">{$kontakt->get(12)->text}</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <footer class="footer">
+        <div class="grid-x align-center-middle">
+            <div class="cell shrink">
+                <div class="logo"><img src="{$basePath}{$images->get(23)->srcObrazku}" alt="Roboter zero"></div>
+                <p>
+                    {$footer->get(1)->text} <a href="#">{$footer->get(2)->text}</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile-nav" id="mobile-menu">
+        <div class="mobile-nav--head">
+            <button id="mobile-menu--close"><img src="{$basePath}{$images->get(3)->srcObrazku}" alt="close"></button>
+        </div>
+        <div class="mobile-nav--menu">
+            <nav>
+                <ul>
+                    <li><a href="" data-destination="nav"><img src="{$basePath}{$images->get(1)->srcObrazku}" alt="aorto"></a></li>
+                    <li class="active"><a href="#" data-destination="o-robotovi" data-observe="[data-name='o-robotovi']">{$menu->get(2)->text}</a></li>
+                    <li><a href="x" data-destination="vlastnosti" data-observe="[data-name='vlastnosti']">{$menu->get(3)->text}</a></li>
+                    <li> <a href="#" data-destination="ocekavani" data-observe="[data-name='ocekavani']">{$menu->get(4)->text}</a></li>
+                    <li> <a href="#" data-destination="predstaveni" data-observe="[data-name='akce']">{$menu->get(5)->text}</a></li>
+                    <li class="contact"><a class="button" href="#" data-destination="kontakt" data-observe="[data-name='kontakt']">{$menu->get(6)->text}</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+     <div class="mobile-nav--overlay" id="mobile-menu--overlay"></div>
+{/block}

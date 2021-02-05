@@ -1,0 +1,86 @@
+{block content}
+<div class="sticky-bar" id="sticky-bar">
+        <div class="sticky-bar--desktop">
+            <div class="grid-x">
+                <div class="cell">
+                    <div class="sticky-bar--desktop__top">
+                        <p> {$menu->get(1)->text}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="cell">
+                    <div class="sticky-bar--desktop__menu">
+                        <div class="logo"><a n:href="Homepage:default"><img src="{$basePath}{$images->get(1)->srcObrazku}" alt="Roboto zero"></a></div>
+                        <nav>
+                            <ul class="menu">
+                                <li class="active"><a href="#" data-destination="o-robotovi" data-observe="[data-name='o-robotovi']">{$menu->get(2)->text}</a></li>
+                                <li><a href="#" data-destination="vlastnosti" data-observe="[data-name='vlastnosti']">{$menu->get(3)->text}</a></li>
+                                <li><a href="#" data-destination="ocekavani" data-observe="[data-name='ocekavani']">{$menu->get(4)->text}</a></li>
+                                <li><a href="#" data-destination="akce" data-observe="[data-name='akce']">{$menu->get(5)->text}</a></li>
+                                <li class="contact"><a class="button" href="#" data-destination="kontakt" data-observe="[data-name='kontakt']">{$menu->get(6)->text}</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sticky-bar--mobile">
+        <div class="grid-x">
+            <div class="cell auto">
+                <div class="logo"><a href="#"><img src="{$basePath}{$images->get(1)->srcObrazku}" alt="Roboto zero"></a></div>
+            </div>
+            <div class="cell shrink">
+                <button id="mobile-menu--open"><img src="{$basePath}{$images->get(2)->srcObrazku}" alt="burger"></button>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container basic">
+        <div class="grid-x align-center">
+            <div class="cell medium-8">
+                <main>
+                    <section class="basic-header">
+                        <h1>{$obecna->get(1)->text}</h1>
+                        <figure><img src="{$basePath}{$images->get(24)->srcObrazku}" alt="Poznej operatora"></figure>
+                    </section>
+                    <section class="basic-content content basic-content-margin">
+                        <p>{$obecna->get(2)->text} </p>
+                        <h2>{$obecna->get(2)->text}</h2>
+                        <p> {$obecna->get(2)->text}</p>
+                        <div class="gallery grid-x grid-margin-x medium-up-3">
+                            <div class="cell"><a href="{$basePath}{$images->get(26)->srcObrazku}" data-mediabox="galerie"><img src="{$basePath}{$images->get(25)->srcObrazku}" alt="Poznej operatora"></a></div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="grid-x align-center-middle">
+            <div class="cell shrink">
+                <div class="logo"><img src="{$basePath}{$images->get(23)->srcObrazku}" alt="Roboter zero"></div>
+                <p>
+                    {$footer->get(1)->text}<a href="#">{$footer->get(2)->text}</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile-nav" id="mobile-menu">
+        <div class="mobile-nav--head">
+            <button id="mobile-menu--close"><img src="{$basePath}{$images->get(3)->srcObrazku}" alt="close"></button>
+        </div>
+        <div class="mobile-nav--menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-destination="nav"><img src="{$images->get(1)->srcObrazku}" alt="aorto"></a></li>
+                    <li class="active"><a href="#" data-destination="o-robotovi" data-observe="[data-name='o-robotovi']">{$menu->get(2)->text}</a></li>
+                    <li><a href="x" data-destination="vlastnosti" data-observe="[data-name='vlastnosti']">{$menu->get(3)->text}</a></li>
+                    <li> <a href="#" data-destination="ocekavani" data-observe="[data-name='ocekavani']">{$menu->get(4)->text}</a></li>
+                    <li> <a href="#" data-destination="predstaveni" data-observe="[data-name='akce']">{$menu->get(5)->text}</a></li>
+                    <li class="contact"><a class="button" href="#" data-destination="kontakt" data-observe="[data-name='kontakt']"> {$menu->get(6)->text}</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="mobile-nav--overlay" id="mobile-menu--overlay"></div>
+{/block}

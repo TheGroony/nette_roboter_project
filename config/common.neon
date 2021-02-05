@@ -1,0 +1,27 @@
+parameters:
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+forms:
+	messages:
+			EMAIL: "Zadejte prosím platnou e-mailovou adresu."
+
+session:
+	expiration: 14 days
+
+
+di:
+	export:
+		parameters: no
+		tags: no
+
+
+services:
+	- App\Router\RouterFactory::createRouter
+	- App\Model\DatabaseManager
+	- App\Controls\MenuControlFactory
